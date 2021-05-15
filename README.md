@@ -8,4 +8,4 @@ All required packages are in requirements.txt
 
 # Link
 ##
-https://appemacovid.ml
+This app is available in : https://appemacovid.ml
