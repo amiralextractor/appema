@@ -14,4 +14,4 @@ All required packages are in requirements.txt
 
 # Link
 ##
-This app is available in : https://appemacovid.ml
+This app is available at : https://appemacovid.ml
