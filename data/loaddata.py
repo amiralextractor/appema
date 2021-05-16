@@ -2,7 +2,13 @@ import pandas as pd
 
 from sqlalchemy import create_engine
 
-ENGINE = engine = create_engine('mysql://emautilisateur:By5hYFfky9CPN@J@db4free.net/emaappilis') #Connexion à la base de données
+#Pour des raisons de sécurité, pour avoir les indenfitiants, demandez aux auteurs de l'application
+host=""
+user=""
+pswd=""
+bdds=""
+
+ENGINE = create_engine('mysql://%s:%s@%s/%s' % (host,user,pswd,bdds)) #Connexion à la base de données
 size=pd.read_sql_query("SHOW TABLES",ENGINE) #Nombre de tables dans la base de données
 
 data=[]
