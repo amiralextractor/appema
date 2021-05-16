@@ -144,7 +144,13 @@ Il est important de la laisser en commentaire pour ne pas écraser les données 
 """
 from sqlalchemy import create_engine
 
-engine = create_engine('mysql://emautilisateur:By5hYFfky9CPN@J@db4free.net/emaappilis')
+#Pour des raisons de sécurité, pour avoir les indenfitiants, demandez aux auteurs de l'application
+host=""
+user=""
+pswd=""
+bdds=""
+
+engine = create_engine('mysql://%s:%s@%s/%s' % (host,user,pswd,bdds))
 print("Connexion réussie")
 
 for i in range(0, len(data)):
